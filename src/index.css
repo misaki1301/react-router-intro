@@ -68,6 +68,6 @@ a {
 }
 
 .react-pdf__Page__canvas {
-    width: auto;
-    height: 100vh !important;
+    width: auto !important;
+    height: 80vh !important;
 }

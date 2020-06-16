@@ -20,7 +20,7 @@ const SerieDetail = () => {
 
     const getDetailSerie = async () => {
         try {
-            const data = await fetch(`http://localhost:8000/api/series/name/${id}`)
+            const data = await fetch(`https://novel-library.herokuapp.com/api/series/name/${id}`)
             const serie = await data.json()
             console.log(serie.data)
             setSerie(serie.data)

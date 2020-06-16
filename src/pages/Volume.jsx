@@ -27,7 +27,7 @@ const Volume = () => {
 
     const getSerieDetail = async() => {
         try {
-            const serie = await fetch(`http://localhost:8000/api/series/name/${slug}`)
+            const serie = await fetch(`https://novel-library.herokuapp.com/api/series/name/${slug}`)
             const data = await serie.json()
             setSerie(data.data)
             console.log("serie", data.data)
@@ -38,7 +38,7 @@ const Volume = () => {
 
     const getVolume = async() => {
         try{
-            const volume = await fetch(`http://localhost:8000/api/volume/${id}`)
+            const volume = await fetch(`https://novel-library.herokuapp.com/api/volume/${id}`)
             const data = await volume.json();
             setVolume(data.data)
             console.log("volume", data.data)
