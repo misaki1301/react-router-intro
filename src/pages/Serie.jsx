@@ -1,5 +1,6 @@
 import React, {Fragment, useEffect, useState} from "react";
 import {Link} from 'react-router-dom'
+import {CircularProgress} from "@material-ui/core";
 
 const Serie = () => {
 
@@ -50,7 +51,7 @@ const Serie = () => {
                         {loadSerie(series)}
                     </div>
                     :
-                    <h2>Tenemos problemas cargando el contenido</h2>
+                    <CircularProgress className='reducto'/>
             }
             </div>
         </Fragment>
